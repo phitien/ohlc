@@ -1,0 +1,167 @@
+@import "../../scss/index";
+
+$space: 56px;
+$s-space: 24px;
+
+.page.page-home-main {
+  background-image: url(/static/apps/bambu-d3/assets/bg1.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  overflow: auto;
+  .layout {
+    .top .wrapper {
+      height: 100%;
+      box-shadow: 0px 0px 12px var(--cl-green);
+    }
+    .left,
+    .right {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        i {
+          cursor: pointer;
+          margin: 0 0 0 12px;
+          padding: 4px;
+          &:hover {
+            box-shadow: 0px 0px 12px var(--cl-white);
+          }
+        }
+        h4 {
+          @include color(var(--cl-purple), var(--cl-brownd));
+          @include flex-height(40px);
+          padding: 8px 12px;
+          margin: 0;
+          text-shadow: 0px 0px 12px var(--cl-white);
+          box-shadow: 0px 0px 12px var(--cl-white);
+          display: flex;
+          align-items: center;
+          .fa-list {
+            display: none;
+          }
+        }
+        .stocks {
+          flex: 1;
+          overflow: auto;
+          border-bottom: 3px solid var(--cl-purple);
+          .stock {
+            padding: 8px;
+            box-shadow: 0 0 2px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            i {
+              margin-right: 6px;
+            }
+            &:hover,
+            &.active {
+              @include color(var(--cl-white), var(--cl-purple));
+            }
+          }
+        }
+      }
+    }
+
+    .main .wrapper {
+      position: relative;
+      height: 100%;
+      padding-top: 40px;
+      h3 {
+        @include color(var(--cl-purple), var(--cl-brownd));
+        display: block;
+        margin: 0;
+        padding: 4px;
+        text-align: center;
+        display: none;
+      }
+      input {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 140px;
+      }
+      select {
+        position: absolute;
+        top: 4px;
+        left: 150px;
+        width: 140px;
+      }
+      .echarts.container {
+        height: 100%;
+        overflow: auto;
+      }
+    }
+    .bottom .wrapper {
+      text-align: center;
+      padding: 8px 0;
+      box-shadow: 0px 0px 12px var(--cl-white);
+    }
+  }
+  /*** screen 960px ***/
+  @media screen and (max-width: 960px) {
+    .layout.rows > .content {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      .left,
+      .right {
+        @include flex-width(100%);
+        position: absolute;
+        top: var(--row-height);
+        left: 0;
+        z-index: 1;
+        display: block;
+        height: calc(100% - var(--top-height) - var(--bottom-height));
+        .wrapper {
+          h4 .fa-list {
+            display: initial;
+          }
+        }
+        &.hide-symbols {
+          @include flex-height(auto);
+        }
+      }
+      .main {
+        @include flex-width(100%);
+        .wrapper {
+          position: inherit;
+          h3 {
+            position: absolute;
+            right: 12px;
+            top: 50px;
+            font-size: 14px;
+            background-color: transparent;
+          }
+          input,
+          select {
+            position: relative;
+            left: initial;
+            margin: 24px 12px 12px;
+            width: calc(50% - 24px);
+          }
+          .echarts {
+            display: block;
+            margin: 24px 0 0;
+          }
+        }
+      }
+    }
+  }
+  /*** screen 768px ***/
+  @media screen and (max-width: 768px) {
+  }
+  /*** print ***/
+  @media print {
+  }
+}
+@media print {
+  #root,
+  .viewport,
+  .fullscreen,
+  .main-content {
+    position: initial;
+  }
+}

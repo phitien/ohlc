@@ -1,0 +1,141 @@
+:root {
+  --font-family: roboto-condensed, sans-serif;
+  --font-size: 14px;
+  --font-weight: 500;
+  --line-height: 20px;
+
+  --left-width: 280px;
+  --right-width: 280px;
+  --top-height: 80px;
+  --bottom-height: auto;
+
+  --scrollbar-border: 0 solid #506b71;
+  --scrollbar-size: 1px;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #506b71;
+  --scrollbar-thumb-border: none;
+  --scrollbar-track-bg: transparent;
+  --scrollbar-track-border: none;
+  --scrollbar-btn-bg: transparent;
+
+  --opacity: 0.5;
+
+  --cl-red: #ff6464;
+  --cl-green: #51aa66;
+  --cl-blue: #06a4df;
+  --cl-yellow: #f8d800;
+  --cl-yellowgreen: yellowgreen;
+  --cl-orange: orange;
+  --cl-cyan: cyan;
+  --cl-purple: #974b96;
+  --cl-brown: brown;
+  --cl-brownl: #44392d;
+  --cl-brownd: #0e0704;
+  --cl-black: #000000;
+  --cl-grey: #505050;
+  --cl-lightgrey: #ebebeb;
+  --cl-white: #ffffff;
+
+  --cl-primary: --cl-red;
+  --cl-primary2: --cl-green;
+  --cl-secondary: --cl-blue;
+  --cl-secondary2: --cl-blue;
+
+  --cl-placeholder: --cl-lightgrey;
+  --cl-error: --cl-red;
+  --cl-warning: --cl-orange;
+  --cl-message: --cl-black;
+
+  --bg-body: #ffffff;
+  --cl-text: --cl-black;
+  --bg-top: --bg-body;
+  --cl-top: --cl-black;
+  --bg-bottom: --bg-body;
+  --cl-bottom: --cl-black;
+  --bg-left: --bg-body;
+  --cl-left: --cl-black;
+  --bg-right: --bg-body;
+  --cl-right: --cl-black;
+  --bg-main: --bg-body;
+  --cl-main: --cl-black;
+
+  --bg-printing: --cl-white;
+
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --cl-overlay: var(--cl-white);
+  --bg-popup: var(--cl-white);
+  --cl-popup: var(--cl-black);
+  --bg-popup-header: var(--cl-purple);
+  --cl-popup-header: var(--cl-white);
+
+  --font-size-h1: 3.1em;
+  --font-size-h2: 2.45em;
+  --font-size-h3: 1.85em;
+  --font-size-h4: 1.21em;
+  --font-size-h5: 1.15em;
+  --font-size-h6: 1.05em;
+
+  --font-size-regular: --font-size;
+  --font-size-bigger: --font-size-h6;
+  --font-size-smaller: 0.9em;
+
+  --logo-width: 140px;
+  --logo-height: 49px;
+
+  --form-el-height: 36px;
+
+  --input-font-size: 14px;
+  --input-line-height: var(--form-el-height);
+  --input-padding: 0 4px;
+  --input-color: #000000;
+  --input-bg-color: #ffffff;
+  --input-border: 1px solid;
+  --input-border-radius: 6px;
+  --input-box-shadow: 1px 1px 6px --cl-black;
+  --input-box-shadow-hover: 1px 1px 2px --cl-black;
+
+  --textarea-font-size: var(--input-font-size);
+  --textarea-line-height: var(--form-el-height);
+  --textarea-padding: var(--input-padding);
+  --textarea-text-color: var(--input-color);
+  --textarea-bg-color: var(--input-bg-color);
+  --textarea-border: var(--input-border);
+  --textarea-border-radius: var(--input-border-radius);
+  --textarea-box-shadow: var(--input-box-shadow);
+  --textarea-box-shadow-hover: var(--input-box-shadow-hover);
+
+  --select-font-size: var(--input-font-size);
+  --select-line-height: var(--form-el-height);
+  --select-padding: var(--input-padding);
+  --select-text-color: var(--input-color);
+  --select-bg-color: var(--input-bg-color);
+  --select-border: var(--input-border);
+  --select-border-radius: var(--input-border-radius);
+  --select-box-shadow: var(--input-box-shadow);
+  --select-box-shadow-hover: var(--input-box-shadow-hover);
+
+  --btn-font-size: 20px;
+  --btn-line-height: var(--form-el-height);
+  --btn-padding: 0 12px;
+  --btn-text-color: #ffffff;
+  --btn-bg-color: #333333;
+  --btn-bg-color-hover: --cl-primary;
+  --btn-text-color-hover: --cl-black;
+  --btn-border: var(--input-border);
+  --btn-box-shadow: 1px 2px 6px var(--btn-text-color);
+  --btn-box-shadow-hover: 1px 3px 11px var(--btn-text-color);
+
+  --icon-font-size: 1em;
+  --icon-image-size: 1.83em;
+
+  --table-height: calc(100%);
+  --table-thead-height: var(--form-el-height);
+  --table-row-height: var(--form-el-height);
+  --table-col-width: 70px;
+  --table-bg: transparent;
+  --table-bd-cl: #7d7d7d;
+  --table-thead-bg: #252525;
+  --table-thead-cl: #d0bc44;
+  --table-row-hover-bg: #515151;
+  --table-row-selected-bg: #6f5353;
+}
