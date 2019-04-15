@@ -52,8 +52,6 @@ export function renderItem(params, api) {
   const l = api.coord([xValue, api.value(3)]);
   const h = api.coord([xValue, api.value(4)]);
   const sW = api.size([1, 0])[0] * 0.15;
-  // global.api = api;
-  // global.params = params;
   const style = api.style({
     stroke: o[1] > c[1] ? api.visual("color") : "#118c1b"
   });
